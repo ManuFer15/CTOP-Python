@@ -7,7 +7,7 @@ print(*productos, sep=", ")
 #Muestra el primer y el último elemento de la lista.
 print("\nPrimer producto:", productos[0])
 print("Último producto:", productos[-1])
-#Añade un nuevo producto a la lista usando el método append()
+#Añade un nuevo producto a la lista usando el metodo append()
 newProducto = input("\nIntroduce el nombre de un nuevo producto para añadir: ")
 productos.append(newProducto)
 print("Lista actualizada:")
