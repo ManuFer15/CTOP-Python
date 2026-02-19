@@ -10,13 +10,16 @@ for elemento in mi_tupla:
     print(elemento)
 ##Ejemplo de listas
 mi_lista = [1, 2, 3, 4, 5]
+#metodos de las listas
 print("Lista:", mi_lista)
 print("Elemento en la posición 2:", mi_lista[1])
 print("Longitud de la lista:", len(mi_lista))
 mi_lista.append(6)
 print("Lista después de agregar un elemento:", mi_lista)
-mi_lista[0] = 0
-print("Lista después de modificar el primer elemento:", mi_lista)
+mi_lista.remove(3)
+print("Lista después de eliminar un elemento:", mi_lista)
+mi_lista[0] = 10
+print("Lista después de modificar un elemento:", mi_lista)
 #recorer la lista
 print("Recorriendo la lista:")
 for elemento in mi_lista:
@@ -24,15 +27,16 @@ for elemento in mi_lista:
 
 ##Ejemplo de diccionarios
 mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+#metodos de los diccionarios
 print("Diccionario:", mi_diccionario)
 print("Valor de la clave 'nombre':", mi_diccionario["nombre"])
-print("Valor de la clave 'edad':", mi_diccionario["edad"])
-print("Valor de la clave 'ciudad':", mi_diccionario["ciudad"])
-print("Claves del diccionario:", mi_diccionario.keys())
-print("Valores del diccionario:", mi_diccionario.values())
-print("Elementos del diccionario:", mi_diccionario.items())
+print("Longitud del diccionario:", len(mi_diccionario))
 mi_diccionario["profesion"] = "Ingeniero"
-print("Diccionario después de agregar una nueva clave-valor:", mi_diccionario)
+print("Diccionario después de agregar una clave-valor:", mi_diccionario)
+del mi_diccionario["edad"]
+print("Diccionario después de eliminar una clave-valor:", mi_diccionario)
+mi_diccionario["ciudad"] = "Barcelona"
+print("Diccionario después de modificar un valor:", mi_diccionario)
 #recorrer el diccionario
 print("Recorriendo el diccionario:")
 for clave, valor in mi_diccionario.items():
