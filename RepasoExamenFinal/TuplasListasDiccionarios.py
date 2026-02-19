@@ -41,4 +41,16 @@ print("Diccionario después de modificar un valor:", mi_diccionario)
 print("Recorriendo el diccionario:")
 for clave, valor in mi_diccionario.items():
     print(f"{clave}: {valor}")
-
+#Ejemplo de conjuntos
+mi_conjunto = {1, 2, 3, 4, 5}
+#metodos de los conjuntos
+print("Conjunto:", mi_conjunto)
+print("Longitud del conjunto:", len(mi_conjunto))
+mi_conjunto.add(6)
+print("Conjunto después de agregar un elemento:", mi_conjunto)
+mi_conjunto.remove(3)
+print("Conjunto después de eliminar un elemento:", mi_conjunto)
+#recorrer el conjunto
+print("Recorriendo el conjunto:")
+for elemento in mi_conjunto:
+    print(elemento)
